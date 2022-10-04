@@ -1,5 +1,6 @@
 /**
- * 
+ * https://www.baeldung.com/java-quicksort
+ * https://www.geeksforgeeks.org/quick-sort/
  * https://www.geeksforgeeks.org/in-place-algorithm/
  */
 
@@ -22,7 +23,7 @@ public class QuickSort {
             myWriter = new FileWriter("random-integers.txt");    
 
             for (int d = 0 ; d<number.length ; d++){
-                number[d] = g.nextInt(100)+1;
+                number[d] = g.nextInt(100) + 1;
 
                 try {
                     //myWriter.write("\r\n");
@@ -43,7 +44,7 @@ public class QuickSort {
             e1.printStackTrace();
         }
 
-        System.out.print("\nunsorted Numbers:" + Arrays.toString(number));
+        System.out.print("\nUnsorted Numbers:" + Arrays.toString(number));
         //System.out.print("\nSorted Numbers:  " + Arrays.toString(mergeSort(number,number.length));
         
         quickSort(number, 0, 9);
@@ -73,7 +74,7 @@ public class QuickSort {
 
     private static int partition(int arr[], int begin, int end) {
         int pivot = arr[end];
-        int i = (begin-1);
+        int i = (begin - 1);
     
         for (int j = begin; j < end; j++) {
             if (arr[j] <= pivot) {
