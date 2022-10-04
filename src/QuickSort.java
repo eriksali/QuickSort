@@ -1,4 +1,5 @@
 /**
+ * https://github.com/eugenp/tutorials/tree/master/algorithms-modules/algorithms-sorting
  * https://sites.math.rutgers.edu/~ajl213/CLRS/CLRS.html
  * https://www.baeldung.com/java-quicksort
  * https://www.geeksforgeeks.org/quick-sort/
@@ -91,7 +92,7 @@ public class QuickSort {
         arr[i+1] = arr[end];
         arr[end] = swapTemp;
     
-        return i+1;
+        return i + 1;
     }
 
 }
